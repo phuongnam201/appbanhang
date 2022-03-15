@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:id="@+id/item_dt_image"
+            android:layout_weight="3"
+            android:src="@drawable/iconnew_w512"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+        </ImageView>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/item_dt_ten"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Tên sản phẩm"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/item_dt_gia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá: 2500000 VND"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/item_dt_mota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả"
+                android:textSize="15dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+// item dien thoai gridmanagerlayout
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:elevation="8dp"
+            app:cardCornerRadius="4dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/item_dt_image"
+                        android:src="@drawable/ic_media_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"/>
+
+                    <TextView
+                        android:id="@+id/item_dt_ten"
+                        android:text="LapTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/item_dt_gia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Giá: 30000000"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+<!--        <ImageView-->
+<!--            android:src="@drawable/iconnew_w512"-->
+<!--            android:layout_gravity="top|right"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp">-->
+<!--        </ImageView>-->
+</androidx.cardview.widget.CardView>
+
+
+</androidx.cardview.widget.CardView>
